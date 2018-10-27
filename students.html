@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	
+class User {
+	constructor(name, surname) {
+		this.name = name;
+		this.surname = surname;
+	}
+
+	getFullname() {
+		return this.name + ' ' + this.surname;
+	}
+}
+
+class Student extends User {
+	constructorn(name, surname, year) {
+		super(name, surname);
+		this.year = year;
+	}
+
+	getCourse() {
+		var res = date.getFullYear() - this.year;
+		return res;
+	}
+}
+
+var student = new Student('Иван','Иванов',2015);
+var date = new Date();
+
+console.log(student.name);
+console.log(student.surname);
+console.log(student.getFullname());
+console.log(student.getCourse());
+
+</script>
+</body>
+</html>
